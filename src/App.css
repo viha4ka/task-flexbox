@@ -4,3 +4,23 @@ body,
     height: 100%;
     margin: 0;
 }
+.flex-container {
+    height: 300px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.flex-container > *:nth-child(3) {
+    align-self: flex-end;
+}
+.flex-container > *:nth-child(2n) {
+    align-self: center;
+}
+.flex-container div {
+    width: 100px;
+    height: 100px;
+    background: #daa520;
+    border-radius: 50%;
+}
